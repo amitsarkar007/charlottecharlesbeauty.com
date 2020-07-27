@@ -6,10 +6,25 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     position:relative;
     height:0;
 }
+
 .video-responsive iframe{
     left:0;
     top:0;
     height:100%;
     width:100%;
     position:absolute;
+}
+
+.outerMap {
+  position:relative;
+  text-align:center;
+  height:500px;
+  width:100%;
+}
+
+.gmap {
+  overflow:hidden;
+  background:none!important;
+  height:500px;
+  width:100%;
 }
