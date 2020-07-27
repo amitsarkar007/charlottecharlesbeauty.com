@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<title>Charlotte Charles Beauty</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Welcome to Charlotte Charles's website">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
+<link rel="stylesheet" href="style.css">
+
+<body class="w3-light-grey">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card">
+    <a class="w3-bar-item w3-button w3-padding-16 w3-hide-medium w3-hide-large w3-left" href="javascript:void(0)" onclick="toggleNavMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-padding-16">Charlotte Charles Beauty</a>
+    <div class="w3-right">
+      <a class="w3-bar-item w3-button w3-padding-16 w3-hide-small" href="index.html">HOME</a>
+      <div class="w3-dropdown-click w3-hide-small">
+        <button class="w3-button w3-padding-16" onclick="showDropDown()">TREATMENTS <i class="fa fa-fw fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4" id="dropdown">
+          <a class="w3-bar-item w3-button w3-padding-16" href="facials.html">Facials</a>
+          <a class="w3-bar-item w3-button w3-padding-16" href="hairs.html">Hairs</a>
+        </div>
+      </div>
+      <a class="w3-bar-item w3-button w3-padding-16 w3-hide-small" href="gallery.html">GALLERY</a>
+      <a class="w3-bar-item w3-button w3-padding-16 w3-hide-small" href="about.html">ABOUT US</a>
+      <a class="w3-bar-item w3-button w3-padding-16 w3-hide-small" href="contact.html">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="nav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a class="w3-bar-item w3-button w3-padding-16" href="index.html">HOME</a>
+  <div class="w3-dropdown">
+    <a class="w3-bar-item w3-dropdown-click w3-padding-16" id="treatments">TREATMENTS <i class="fa fa-fw fa-caret-down"></i></a>
+    <div class="w3-dropdown-container w3-bar-block w3-card-4" id="dropdown">
+      <a class="w3-bar-item w3-button w3-padding-16" href="facials.html">Facials</a>
+      <a class="w3-bar-item w3-button w3-padding-16" href="hairs.html">Hairs</a>
+    </div>
+  </div>
+  <a class="w3-bar-item w3-button w3-padding-16" href="gallery.html">GALLERY</a>
+  <a class="w3-bar-item w3-button w3-padding-16" href="about.html">ABOUT US</a>
+  <a class="w3-bar-item w3-button w3-padding-16" href="contact.html">CONTACT</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b style="color:black">Charlotte Charles Beauty</b></h1>
+  </header>
+
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+
+      <!-- Page -->
+      <div class="w3" style="margin-top:40px">
+  
+        <div class="w3-container w3-card w3-white w3-padding-16 w3-margin-bottom" id="media">
+          <div class="w3-container">
+            <h5 class="w3-opacity">Meetup / <b><a target="_blank" rel="noreferrer" class="w3-hover-text-blue" href="https://www.meetup.com/QABabble-online/" title="Open QA Babble Meetup website">QA Babble</a></b></h5>
+            <h6 class="w3-text-teal"><i class="far fa-calendar-alt fa-fw w3-margin-right"></i>Jun 2020</h6>
+            <p class="video-responsive">
+              <iframe allowfullscreen frameborder="0" title="QA Babble - Taiko Meetup" src="https://www.youtube.com/embed/g7kwk6KXfTQ"></iframe>
+            </p>
+            <p>
+              There is a lot of talk in the software industry today about browser automation tools like Cypress, Puppeteer, WebDriver, TestCafe, and TestProject.
+              Yet nobody seems to be talking about Taiko, an automation tool from Thoughtworks, the company that created Selenium and WebDriver.
+              In this talk I will take you through some of the key features of Taiko and why I feel you should consider this simple yet powerful tool.
+              Zabil from Thoughtworks will also be in the webinar to assist with the Q&A element at the end of the talk.
+            </p>
+          </div>
+        </div>
+  
+      <!-- End Page -->
+      </div>
+  
+    <!-- End Grid -->
+    </div>
+  
+  <!-- End Page Container -->
+  </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-white w3-center w3-margin-top" style="padding:20px">
+  <p>Find us on social media</p>
+  <a target="_blank" rel="noreferrer" href="https://www.facebook.com/charlottecharlesbeauty/" title="Like us on Facebook"><i class="fab fa-facebook fa-fw w3-hover-opacity" style="font-size:20px;color:black"></i></a>
+  <a target="_blank" rel="noreferrer" href="https://www.instagram.com/charlottecharlesbeauty/" title="Follow us on Instagram"><i class="fab fa-instagram fa-fw w3-hover-opacity" style="font-size:20px;color:black"></i></a>
+  <a target="_blank" rel="noreferrer" href="https://www.twitter.com/charlottecharlesbeauty/" title="Follow us on Twitter"><i class="fab fa-twitter fa-fw w3-hover-opacity" style="font-size:20px;color:black"></i></a>
+  <a target="_blank" rel="noreferrer" href="mailto:charlotte_charles@hotmail.com" title="Send us an email"><i class="fas fa-envelope fa-fw w3-hover-opacity" style="font-size:20px;color:black"></i></a>
+  <p>Copyright<i class="fas fa-copyright fa-fw" style="color:black"></i>Charlotte Charles 2020. Powered by <a target="_blank" rel="noreferrer" class="w3-hover-text-black" href="https://www.w3schools.com/w3css/default.asp" title="Open W3 Schools website">w3.css</a></p>
+</footer>
+<!-- End Footer -->
+
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleNavMenu() {
+    var x = document.getElementById("nav");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+
+  function showDropDown() {
+    var x = document.getElementById("dropdown");
+    if (x.className.indexOf("w3-show") == -1) { 
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+    if (!e.target.matches('#treatments')) {
+      var dropDown = document.getElementById("dropdown");
+      if (dropDown.classList.contains('show')) {
+        dropDown.classList.remove('show');
+      }
+    }
+  }
+
+  // Close the dropdown menu if the user clicks outside of it
+  //window.onclick = function(event) {
+  //  if (!event.target.matches('#treatments')) {
+  //    var dropdowns = document.getElementsById("dropdown");
+  //    var i;
+  //    for (i = 0; i < dropdowns.length; i++) {
+  //      var openDropdown = dropdowns[i];
+  //      if (openDropdown.classList.contains('show')) {
+  //        openDropdown.classList.remove('show');
+  //      }
+  //    }
+  //  }
+  //}
+
+</script>
+
+</body>
+</html>
