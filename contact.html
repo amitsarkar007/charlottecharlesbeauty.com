@@ -5,11 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Welcome to Charlotte Charles's website">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
 <link rel="stylesheet" href="style.css">
 
-<body class="w3-light-grey">
+<body>
 
 <style>
   iframe {
@@ -20,16 +21,19 @@
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card">
+  <div class="w3-bar w3-2019-sweet-corn w3-card">
     <a class="w3-bar-item w3-button w3-padding-16 w3-hide-medium w3-hide-large w3-left" href="javascript:void(0)" onclick="toggleNavMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a class="w3-bar-item w3-padding-16">Charlotte Charles Beauty</a>
     <div class="w3-right">
       <a class="w3-bar-item w3-button w3-padding-16 w3-hide-small" href="index.html">HOME</a>
       <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-button w3-padding-16">TREATMENTS <i class="fa fa-fw fa-caret-down"></i></button>
+        <button class="w3-padding-16 w3-button w3-hide-small" title="More">TREATMENTS <i class="fa fa-fw fa-caret-down"></i></button>     
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a class="w3-bar-item w3-button w3-padding-16" href="facials.html">Facials</a>
-          <a class="w3-bar-item w3-button w3-padding-16" href="hairs.html">Hairs</a>
+          <a class="w3-bar-item w3-button" href="facial.html">Facial</a>
+          <a class="w3-bar-item w3-button" href="massage.html">Massage</a>
+          <a class="w3-bar-item w3-button" href="nail.html">Nail</a>
+          <a class="w3-bar-item w3-button" href="waxing.html">Waxing</a>
+          <a class="w3-bar-item w3-button" href="eyes.html">Eyes</a>
         </div>
       </div>
       <a class="w3-bar-item w3-button w3-padding-16 w3-hide-small" href="gallery.html">GALLERY</a>
@@ -42,96 +46,70 @@
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="nav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a class="w3-bar-item w3-button w3-padding-16" href="index.html">HOME</a>
-  <div class="w3-dropdown">
-    <a class="w3-bar-item w3-dropdown-click w3-padding-16" id="treatments">TREATMENTS <i class="fa fa-fw fa-caret-down"></i></a>
-    <div class="w3-dropdown-container w3-bar-block w3-card-4" id="dropdown">
-      <a class="w3-bar-item w3-button w3-padding-16" href="facials.html">Facials</a>
-      <a class="w3-bar-item w3-button w3-padding-16" href="hairs.html">Hairs</a>
-    </div>
-  </div>
+  <a class="w3-bar-item w3-button w3-padding-16" href="treatments.html">TREATMENTS</a>
   <a class="w3-bar-item w3-button w3-padding-16" href="gallery.html">GALLERY</a>
   <a class="w3-bar-item w3-button w3-padding-16" href="about.html">ABOUT US</a>
   <a class="w3-bar-item w3-button w3-padding-16" href="contact.html">CONTACT</a>
 </div>
 
 <!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-    <!-- First Container -->
-    <div class="w3-container w3-card w3-white w3-padding-16 w3-margin-bottom" id="media">
-      <div class="w3-container" style="margin-top:40px">
-      <h2>Find Us</h2>
-        <div class="outerMap">
-          <div class="gmap">
-            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Charlotte%20Charles%20Beauty&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-          </div>
-        </div>
-      </div>
-    
-    <!-- End First Container -->
-    </div>
-
-    <!-- Second Container -->
-    <div class="w3-container w3-card w3-white w3-padding-16 w3-margin-bottom" id="media">
-      <div class="w3-container">
-
-        <!-- The Grid -->
-        <div class="w3-row-padding">
-
-          <!-- First Column -->
-          <div class="w3-half w3-margin-bottom" style="padding: 0 8px;">
-            <div class="card">
-              <div class="container" style="padding: 0 16px;">
-                <h2>Contact Us</h2>
-                <li class="w3-bar">
-                  <i class="fas fa-map-marker-alt fa-fw" style="font-size:20px;color:black"></i>
-                  <div class="w3-bar-item">
-                    <span class="w3-large">First Floor, 3 Ashton Square, Dunstable, LU6 3SN</span><br>
-                  </div>
-                </li>
-                <p><i class="fas fa-map-marker-alt fa-fw" style="font-size:20px;color:black"></i>First Floor, 3 Ashton Square, Dunstable, LU6 3SN</p>
-                <p><i class="fas fa-envelope fa-fw" style="font-size:20px;color:black"></i><a target="_blank" rel="noreferrer" href="https://www.facebook.com/charlottecharlesbeauty/" title="Like us on Facebook"></a></p>
-                <p><i class="fas fa-envelope fa-fw" style="font-size:20px;color:black"></i><a target="_blank" rel="noreferrer" href="https://www.instagram.com/charlottecharlesbeauty/" title="Follow us on Instagram"></a></p>
-                <p><i class="fas fa-phone fa-fw" style="font-size:20px;color:black"></i><a target="_blank" rel="noreferrer" href="tel:+441582671307" title="Call us">+44 (0)15826 71307</a></p>
-                <p><i class="fas fa-envelope fa-fw" style="font-size:20px;color:black"></i><a target="_blank" rel="noreferrer" href="mailto:charlotte_charles@hotmail.com" title="Send us an email">charlotte_charles@hotmail.com</a></p>
-                <br>
-              </div>
-            </div>
-          </div>
-
-          <!-- Second Column -->
-          <div class="w3-half w3-margin-bottom" style="padding: 0 8px;">
-            <div class="card">
-              <div class="container" style="padding: 0 16px;">
-                <h2>Opening Hours</h2>
-                <p><b>Monday</b> - Closed</p>
-                <p><b>Tuesday</b> - <time>09:00</time> - <time>20:00</time></p>
-                <p><b>Wednesday</b> - <time>09:00</time> - <time>20:00</time></p>
-                <p><b>Thursday</b> - <time>09:00</time> - <time>20:00</time></p>
-                <p><b>Friday</b> - <time>09:00</time> - <time>20:00</time></p>
-                <p><b>Saturday</b> - <time>09:00</time> - <time>18:00</time></p>
-                <p><b>Sunday</b> - Closed</p>
-                <br>
-              </div>
-              </div>
-          </div>
-
-        <!-- End Grid -->
-        </div>
-
-    <!-- End Second Container -->
+  <!-- Map -->
+  <div class="w3-container w3-2019-creme-de-peche">
+    <div class="w3-content w3-padding-64">
+      <h1 class="w3-center"><b>Find us</b></h1>
+      <div class="w3-content w3-padding-16" style="height: 500px; width: 100%;">
+        <iframe src="https://maps.google.com/maps?q=Charlotte%20Charles%20Beauty&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
       </div>
     </div>
+  </div>
 
+  <!-- Contact Us -->
+  <div class="w3-container w3-sand">
+    <div style="display: flex;">
+      <div class="w3-content w3-padding-64">
+        <h1 class="w3-center">
+          <b>Contact us</b>
+        </h1>
+        <div class="w3-content w3-padding-16">
+          <table>
+            <tr><th style="text-align: left;"><i class="fas fa-map-marker-alt fa-fw" style="font-size:20px;"></i></th><td style="padding: 10px;"><a target="_blank" rel="noreferrer" href="https://www.waze.com/livemap/directions?latlng=51.8853692%2C-0.5210492999999999" title="Locate us">3 Ashton Square, Dunstable, LU6 3SN</a></td></tr>
+            <tr><th style="text-align: left;"><i class="fas fa-phone fa-fw" style="font-size:20px;"></i></th><td style="padding: 10px;"><a target="_blank" rel="noreferrer" href="tel:+441582671307" title="Call us">+44 (0)15826 71307</a></td></tr>
+            <tr><th style="text-align: left;"><i class="fas fa-envelope fa-fw" style="font-size:20px;"></i></th><td style="padding: 10px;"><a target="_blank" rel="noreferrer" href="mailto:charlotte_charles@hotmail.com" title="Send us an email">charlotte_charles@hotmail.com</a></td></tr>
+          </table>
+        </diV>
+      </div>
+    </div>
+  </div>
 
-
-
+  <!-- Opening Hours -->
+  <div class="w3-container w3-2019-vanilla-custard">
+    <div style="display: flex;">
+      <div class="w3-content w3-padding-64">
+        <h1 class="w3-center">
+          <b>Opening Hours</b>
+        </h1>
+        <div class="w3-content w3-padding-16">
+          <table>
+            <tr><th style="text-align: left;">Monday</th><td style="padding: 10px; color: red;">CLOSED</td></tr>
+            <tr><th style="text-align: left;">Tuesday</th><td style="padding: 10px;"><time>09:00</time> - <time>20:00</time></td></tr>
+            <tr><th style="text-align: left;">Wednesday</th><td style="padding: 10px;"><time>09:00</time> - <time>20:00</time></td></tr>
+            <tr><th style="text-align: left;">Thursday</th><td style="padding: 10px;"><time>09:00</time> - <time>20:00</time></td></tr>
+            <tr><th style="text-align: left;">Friday</th><td style="padding: 10px;"><time>09:00</time> - <time>20:00</time></td></tr>
+            <tr><th style="text-align: left;">Saturday</th><td style="padding: 10px;"><time>09:00</time> - <time>18:00</time></td></tr>
+            <tr><th style="text-align: left;">Sunday</th><td style="padding: 10px; color: red;">CLOSED</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!-- End Page Container -->
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-white w3-center w3-margin-top" style="padding:20px">
+<footer class="w3-container w3-light-grey w3-center w3-padding-48" style="padding:20px">
   <p>Find us on social media</p>
   <a target="_blank" rel="noreferrer" href="https://www.facebook.com/charlottecharlesbeauty/" title="Like us on Facebook"><i class="fab fa-facebook fa-fw w3-hover-opacity" style="font-size:20px;color:black"></i></a>
   <a target="_blank" rel="noreferrer" href="https://www.instagram.com/charlottecharlesbeauty/" title="Follow us on Instagram"><i class="fab fa-instagram fa-fw w3-hover-opacity" style="font-size:20px;color:black"></i></a>
@@ -150,39 +128,6 @@
       x.className = x.className.replace(" w3-show", "");
     }
   }
-
-  function showDropDown() {
-    var x = document.getElementById("dropdown");
-    if (x.className.indexOf("w3-show") == -1) { 
-      x.className += " w3-show";
-    } else {
-      x.className = x.className.replace(" w3-show", "");
-    }
-  }
-
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(e) {
-    if (!e.target.matches('#treatments')) {
-      var dropDown = document.getElementById("dropdown");
-      if (dropDown.classList.contains('show')) {
-        dropDown.classList.remove('show');
-      }
-    }
-  }
-
-  // Close the dropdown menu if the user clicks outside of it
-  //window.onclick = function(event) {
-  //  if (!event.target.matches('#treatments')) {
-  //    var dropdowns = document.getElementsById("dropdown");
-  //    var i;
-  //    for (i = 0; i < dropdowns.length; i++) {
-  //      var openDropdown = dropdowns[i];
-  //      if (openDropdown.classList.contains('show')) {
-  //        openDropdown.classList.remove('show');
-  //      }
-  //    }
-  //  }
-  //}
 
 </script>
 

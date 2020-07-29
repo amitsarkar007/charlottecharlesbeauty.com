@@ -10,3 +10,5 @@ Website code for charlottecharlesbeauty.co.uk
 * Font Awesome Kit 5
 * Domain registration on Dynadot
 * Embed Google Maps
+* Flat Icon
+* Tableizer
