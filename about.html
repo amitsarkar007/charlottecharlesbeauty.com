@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-<title>Charlotte Charles Beauty</title>
+<title>About Us</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Welcome to Charlotte Charles's website">
+<meta name="description" content="About Charlotte Charles Beauty in Dunstable, UK">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
@@ -14,7 +14,7 @@
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar w3-2019-sweet-corn w3-card">
+  <div class="w3-bar w3-light-grey w3-card">
     <a class="w3-bar-item w3-button w3-padding-16 w3-hide-medium w3-hide-large w3-left" href="javascript:void(0)" onclick="toggleNavMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a class="w3-bar-item w3-padding-16">Charlotte Charles Beauty</a>
     <div class="w3-right">
@@ -36,10 +36,17 @@
   </div>
 </div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="nav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+<!-- Navbar on small screens -->
+<div id="nav" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a class="w3-bar-item w3-button w3-padding-16" href="index.html">HOME</a>
-  <a class="w3-bar-item w3-button w3-padding-16" href="treatments.html">TREATMENTS</a>
+  <button onclick="accordion('treatments')" class="w3-button w3-block w3-padding-16 w3-left-align">TREATMENTS <i class="fa fa-fw fa-caret-down"></i></button>
+  <div id="treatments" class="w3-container w3-hide">
+    <a class="w3-bar-item w3-button w3-padding-16" href="facial.html">Facial</a>
+    <a class="w3-bar-item w3-button w3-padding-16" href="massage.html">Massage</a>
+    <a class="w3-bar-item w3-button w3-padding-16" href="nail.html">Nail</a>
+    <a class="w3-bar-item w3-button w3-padding-16" href="waxing.html">Waxing</a>
+    <a class="w3-bar-item w3-button w3-padding-16" href="eyes.html">Eyes</a>
+  </div>
   <a class="w3-bar-item w3-button w3-padding-16" href="gallery.html">GALLERY</a>
   <a class="w3-bar-item w3-button w3-padding-16" href="about.html">ABOUT US</a>
   <a class="w3-bar-item w3-button w3-padding-16" href="contact.html">CONTACT</a>
@@ -65,8 +72,8 @@
       <div class="w3-row-padding">
 
         <!-- First Column -->
-        <div class="w3-third w3-white" style="margin-top:20px; padding: 0 8px;">
-          <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+        <div class="w3-third" style="margin-top:20px; padding: 0 8px;">
+          <div class="card w3-light-grey" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
             <img src="assets/images/petercharles.jpg" alt="Charlotte" style="width:100%">
             <div class="container" style="padding: 0 16px;">
               <h2>Charlotte Charles</h2>
@@ -81,7 +88,7 @@
 
         <!-- Second Column -->
         <div class="w3-third" style="margin-top:20px; padding: 0 8px;">
-          <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+          <div class="card w3-light-grey" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
             <img src="assets/images/petercharles.jpg" alt="Heather" style="width:100%">
             <div class="container" style="padding: 0 16px;">
               <h2>Heather Charles</h2>
@@ -96,7 +103,7 @@
 
         <!-- Third Column -->
         <div class="w3-third" style="margin-top:20px; padding: 0 8px;">
-          <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+          <div class="card w3-light-grey" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
             <img src="assets/images/petercharles.jpg" alt="Peter" style="width:100%">
             <div class="container" style="padding: 0 16px;">
               <h2>Peter Charles</h2>
@@ -123,7 +130,6 @@
   <p>Find us on social media</p>
   <a target="_blank" rel="noreferrer" href="https://www.facebook.com/charlottecharlesbeauty/" title="Like us on Facebook"><i class="fab fa-facebook fa-fw w3-hover-opacity" style="font-size:20px;color:black"></i></a>
   <a target="_blank" rel="noreferrer" href="https://www.instagram.com/charlottecharlesbeauty/" title="Follow us on Instagram"><i class="fab fa-instagram fa-fw w3-hover-opacity" style="font-size:20px;color:black"></i></a>
-  <a target="_blank" rel="noreferrer" href="https://www.twitter.com/charlottecharlesbeauty/" title="Follow us on Twitter"><i class="fab fa-twitter fa-fw w3-hover-opacity" style="font-size:20px;color:black"></i></a>
   <p>Copyright<i class="fas fa-copyright fa-fw" style="color:black"></i>Charlotte Charles 2020. Powered by <a target="_blank" rel="noreferrer" class="w3-hover-text-black" href="https://www.w3schools.com/w3css/default.asp" title="Open W3 Schools website">w3.css</a></p>
 </footer>
 <!-- End Footer -->
@@ -132,6 +138,16 @@
   // Used to toggle the menu on small screens when clicking on the menu button
   function toggleNavMenu() {
     var x = document.getElementById("nav");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+
+  // Used to display accordion menu on small screens
+  function accordion(id) {
+    var x = document.getElementById(id);
     if (x.className.indexOf("w3-show") == -1) {
       x.className += " w3-show";
     } else { 
