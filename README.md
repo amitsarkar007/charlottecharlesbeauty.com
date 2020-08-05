@@ -14,3 +14,4 @@ Website code for charlottecharlesbeauty.com
 * Free SVGs by [Flat Icon](https://www.flaticon.com/)
 * Convert Spreadsheets to HTML <Table> using [Tableizer](https://tableizer.journalistopia.com/)
 * Fonts by [Google Fonts](https://fonts.google.com/)
+* SVGs edited by [Method Draw SVG Editor](https://editor.method.ac/)
